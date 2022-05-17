@@ -1,23 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import Card from './Components/Card/default';
 
 function App() {
+  const social = [
+    {
+      icon: 'fab fa-facebook-f',
+      link: 'https://www.facebook.com/',
+    },
+    {
+      icon: 'fab fa-twitter',
+      link: 'https://www.twitter.com/',
+    },
+    {
+      icon: 'fas fa-share',
+      link: '',
+    },
+    {
+      icon: 'fas fa-thumbs-up',
+      link: '',
+    },
+  ];
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='container'>
+      <Card
+        image='./images/casey-cott.jpg'
+        name='Casey Cott'
+        show='Riverdale'
+        social={social}
+      />
     </div>
   );
 }
