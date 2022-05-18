@@ -13,6 +13,7 @@ const Template = (args) => <Button {...args} />;
 export const Red = Template.bind({});
 Red.args = {
   backgroundColor: 'red',
+  color: 'white',
   label: 'press me now',
   size: 'md',
 };
@@ -20,6 +21,7 @@ Red.args = {
 export const Orange = Template.bind({});
 Orange.args = {
   backgroundColor: 'orange',
+  color: 'black',
   label: 'orange button',
   size: 'lg',
 };
@@ -27,6 +29,17 @@ Orange.args = {
 export const Purple = Template.bind({});
 Purple.args = {
   backgroundColor: 'purple',
+  color: 'white',
   label: 'purple button',
   size: 'sm',
+};
+
+export const LightType = Template.bind({});
+LightType.args = {
+  backgroundColor: '#ccc',
+  color: 'black',
+  borderRadius: 10,
+  fontWeight: 300,
+  label: 'light font weight',
+  size: 'lg',
 };
